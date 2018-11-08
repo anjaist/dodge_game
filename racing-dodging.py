@@ -12,7 +12,7 @@ light_green = (0, 255, 0)
 dark_green = (0, 180, 0)
 blue = (0, 0, 255)
 intro_bgcolor = (215, 225, 242)
-bgcolor = (242, 244, 249)
+bgcolor = white
 block_color = (79, 43, 9)
 yellow = (255, 255, 0)
 
@@ -25,7 +25,7 @@ clock = pygame.time.Clock()
 fps = 30
 
 #car variables defined
-cars = ["car_blue.png", "car_green.png", "car_yellow.png", "car_red.png", "car_grey.png", "car_police.png"]
+cars = ["images/car_blue.bmp", "images/car_green.bmp", "images/car_yellow.bmp", "images/car_red.bmp", "images/car_grey.bmp", "images/car_police.bmp"]
 carw = 59
 carh = 111
 random.shuffle(cars)
@@ -33,8 +33,8 @@ carImg = pygame.image.load(cars[0])
 carImg = pygame.transform.scale(carImg, (carw, carh))
 
 #sound items
-pygame.mixer.music.load("music_bg.wav")
-sound_crash = pygame.mixer.Sound("sound_crash.wav")
+pygame.mixer.music.load("sounds/music_bg.wav")
+sound_crash = pygame.mixer.Sound("sounds/sound_crash.wav")
 
 paused = False
 
